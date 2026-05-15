@@ -8,7 +8,6 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 
 | Category | Description |
 |---|---|
-| [Lazy Projects](Lazy-Projects/README.md) | AI apps and prototypes built using Lazy |
 | [AI Automation Projects](AI-Automation-Projects/README.md) | Workflow automation, AI assistants, and productivity tools |
 | [Prompt Engineering Projects](Prompt-Engineering-Projects/README.md) | Prompt workflows, structured outputs, and AI task design |
 
@@ -16,7 +15,7 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 
 | Project | Focus Area | Platform / Tools | Link |
 |---|---|---|---|
-| [LazyLinks](Lazy-Projects/LazyLinks/README.md) | Google Drive link automation for e-commerce asset workflows | Lazy / AI-assisted development | [GitHub Repo](https://github.com/AyanKhann1/LazyLinks) |
+| [LazyLinks](LazyLinks/README.md) | Google Drive link automation for e-commerce asset workflows | Lazy / AI-assisted development | [GitHub Repo](https://github.com/AyanKhann1/LazyLinks) |
 
 ## Skills Demonstrated
 
@@ -33,7 +32,7 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 ```text
 .
 ├── README.md
-├── Lazy-Projects/
+├── LazyLinks/
 ├── AI-Automation-Projects/
 └── Prompt-Engineering-Projects/
 ```
