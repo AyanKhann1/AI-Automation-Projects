@@ -6,7 +6,7 @@ This folder contains AI apps and prototypes built using Lazy.
 
 | Project | Problem Solved | Live Link |
 |---|---|---|
-| [Lazy Link Project](Lazy-Link-Project/README.md) | To be added | Add link here |
+| [LazyLinks](LazyLinks/README.md) | Automates repetitive Google Drive link handling for asset handoff workflows | [GitHub Repo](https://github.com/AyanKhann1/LazyLinks) |
 
 ## Suggested Project Format
 

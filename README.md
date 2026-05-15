@@ -16,7 +16,7 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 
 | Project | Focus Area | Platform / Tools | Link |
 |---|---|---|---|
-| [Lazy Link Project](Lazy-Projects/Lazy-Link-Project/README.md) | To be added | Lazy | Add live project link here |
+| [LazyLinks](Lazy-Projects/LazyLinks/README.md) | Google Drive link automation for e-commerce asset workflows | Lazy / AI-assisted development | [GitHub Repo](https://github.com/AyanKhann1/LazyLinks) |
 
 ## Skills Demonstrated
 
