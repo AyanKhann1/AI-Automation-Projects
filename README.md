@@ -16,7 +16,7 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 
 | Project | Focus Area | Platform / Tools | Link |
 |---|---|---|---|
-| Lazy Project | To be added | Lazy | Add live project link here |
+| [Lazy Link Project](Lazy-Projects/Lazy-Link-Project/README.md) | To be added | Lazy | Add live project link here |
 
 ## Skills Demonstrated
 
@@ -49,4 +49,3 @@ Each project should explain:
 - Live demo or project link
 - Screenshots, if available
 - What I learned
-

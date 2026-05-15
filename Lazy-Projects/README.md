@@ -6,7 +6,7 @@ This folder contains AI apps and prototypes built using Lazy.
 
 | Project | Problem Solved | Live Link |
 |---|---|---|
-| Lazy Project | To be added | Add link here |
+| [Lazy Link Project](Lazy-Link-Project/README.md) | To be added | Add link here |
 
 ## Suggested Project Format
 
@@ -20,4 +20,3 @@ Each project should include:
 - Live link
 - Screenshots
 - What I learned
-
