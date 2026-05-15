@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local app / secrets
+.env
+token.json
+credentials.json
+
+# Build clutter
+dist/
+build/
+

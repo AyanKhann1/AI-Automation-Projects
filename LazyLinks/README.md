@@ -1,61 +1,136 @@
 # LazyLinks
 
-## 1. Overview
+> *Because copy-pasting 200 Drive links by hand is not a workflow. It is a punishment.*
 
-LazyLinks is a desktop workflow app built to reduce the manual effort of generating and organizing Google Drive links for product images, campaign assets, and structured handoff sheets.
+---
 
-The project was created from a real e-commerce operations problem: teams often need to copy dozens or hundreds of Drive links into spreadsheets while preserving SKU order, folder mapping, and file sequence.
+## The Job Nobody Talks About
 
-## 2. Problem Solved
+Picture this. It is Monday morning. Your team just finished a product shoot - 15 SKUs, 5 images each. The catalogue sheet is due by noon.
 
-Product listing and catalogue teams often spend unnecessary time on repetitive Google Drive tasks:
+So you open Google Drive.
 
-- Opening product folders one by one
-- Generating shareable links manually
-- Copying links into spreadsheet cells
-- Checking image order by eye
-- Repeating the same process for every SKU or campaign
+You find the first folder. You right-click the first image. You hit *"Get link"*. You change the permission to *"Anyone with link"*. You copy it. You switch to your spreadsheet. You find the right row. You find the right column. You paste it.
 
-This creates avoidable manual work and increases the chance of mapping mistakes.
+Now you do that **74 more times.**
 
-## 3. What LazyLinks Does
+Not because it is complex. Not because it requires skill. Just because nobody has automated the part where a human being copies a link, switches windows, finds a cell, and pastes it. Over and over. While making sure the order is right, the SKU mapping is right, and nothing slips into the wrong column.
 
-- Uploads folders, images, or zip packs in a structured workflow
-- Preserves ascending image order automatically
-- Generates clean output sheets with Drive links
-- Maps links folder by folder for easier catalogue handoff
-- Reduces repetitive copy-paste work for asset-heavy workflows
+This is the quiet tax on every team that uses Google Drive for structured asset handoff.
 
-## 4. Target Users
+---
 
-- E-commerce catalogue teams
-- Product listing teams
-- Marketing operations teams
-- Campaign asset teams
-- Client delivery teams using Google Drive and spreadsheets
+## What Actually Goes Wrong
 
-## 5. Tools / Platform
+It is not just slow. It is fragile.
 
-- Lazy
-- Google Drive workflow
-- Spreadsheet output workflow
-- AI-assisted product building
+- You open **folder after folder manually**
+- You check **file order by eye**
+- You generate **shareable links one at a time**
+- You **paste into sheets by hand**
+- You **repeat the same process across every SKU, every product, every campaign**
 
-## 6. Repository / Demo
+By the time you are done, you are not sure if you got it right. So you check it again.
 
-- GitHub repository: [LazyLinks](https://github.com/AyanKhann1/LazyLinks)
-- Demo access: Available through the original repository instructions
+That is the real cost - not just the hour it takes, but the second hour you spend doubting the first.
 
-## 7. Business Value
+---
 
-LazyLinks helps reduce repetitive manual work in asset handoff workflows. It can make product listing and catalogue preparation faster, more consistent, and less error-prone.
+## LazyLinks Was Built to End This
 
-The project is especially relevant for e-commerce teams that regularly manage product images, SKU sheets, and structured file links.
+LazyLinks is a desktop app that turns repetitive Google Drive link handling into a fast, structured workflow.
 
-## 8. What I Learned
+You point it at your files. It handles the rest.
 
-- Identifying a real workflow bottleneck from e-commerce operations
-- Turning a repetitive manual process into a product idea
-- Designing an AI-assisted app around a practical business problem
-- Communicating product value through a clear use case and workflow story
+| Before LazyLinks | After LazyLinks |
+| --- | --- |
+| Open folders one by one | Upload a batch in one step |
+| Check file order manually | Order is preserved automatically |
+| Generate links one at a time | All links are generated in a single run |
+| Paste into sheets by hand | Clean output sheet, ready to use |
+| Repeat for every SKU | One build. Done. |
 
+---
+
+## Who This Is For
+
+LazyLinks was born out of an e-commerce pain point - product listing teams preparing catalogue sheets with dozens of SKUs and hundreds of images. But the problem is broader than that.
+
+Any team using Google Drive for asset handoff, campaign files, client delivery, or structured uploads can run into the same friction. If your work ever looks like this:
+
+| Product | SKU | Img 1 | Img 2 | Img 3 | Img 4 | Img 5 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Product A | SKU 1 | Link | Link | Link | Link | Link |
+| Product A | SKU 2 | Link | Link | Link | Link | Link |
+| Product B | SKU 1 | Link | Link | Link | Link | Link |
+| Product B | SKU 2 | Link | Link | Link | Link | Link |
+
+...and you are filling that sheet by hand, LazyLinks is for you.
+
+---
+
+## What It Does
+
+- **Choose a Google Drive destination** inside the app
+- **Upload folders, images, or zip packs** in a single step
+- **Preserve ascending image order** automatically
+- **Generate a clean output sheet** with mapped Drive links, folder by folder
+- **Reduce manual mistakes** and the repetitive effort that causes them
+
+The output works for marketplace listing, internal trackers, handoff sheets, campaign logs, and any workflow that depends on correctly ordered Drive links.
+
+---
+
+## How It Works
+
+1. Drop in a local set of files or folders
+2. LazyLinks uploads them into a structured Google Drive destination
+3. It preserves the intended file sequence
+4. It generates a ready-to-use output sheet with shareable links
+
+---
+
+## Screenshots
+
+### App Overview
+
+- Teammate-specific Google auth setup
+- Upload queue and one-click build flow
+- Generated output file inside the app
+- Live console for run progress
+
+### Example Output
+
+LazyLinks produces a clean output sheet with ordered Drive links mapped folder by folder.
+
+![LazyLinks Software](./assets/Software.png)
+![LazyLinks Build Output](./assets/Output.png)
+![LazyLinks Excel Output](./assets/excel_output.png)
+
+Screenshots live in [`assets/`](./assets).
+
+---
+
+## Demo
+
+If you are a recruiter, product manager, operator, or collaborator and want to see it in action, reach out for:
+
+- a live demo walkthrough
+- screenshots and output samples
+- limited build access
+
+---
+
+## Ownership
+
+LazyLinks is owned and maintained by **Ayan Khan**.
+
+X: [@AyanKhann15](https://x.com/AyanKhann15)
+
+Copyright (c) 2026 Ayan Khan. All rights reserved.
+
+---
+
+## Repository Purpose
+
+This is a public showcase repository for the product story, workflow, and use case. The implementation remains private.
