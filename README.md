@@ -1,6 +1,6 @@
-# Ayan Khan - AI Projects Portfolio
+# Ayan Khan - AI & Automation Projects
 
-Welcome to my AI projects portfolio. This repository contains AI-focused projects and apps built using AI tools, automation, and AI-assisted development platforms.
+Welcome to my AI and automation projects repository. This repository contains AI-focused projects, workflow automation tools, and product-style apps built using AI tools and AI-assisted development platforms.
 
 The goal of this portfolio is to show how I use AI to solve practical problems, build useful tools, and create working product-style projects.
 
@@ -23,7 +23,6 @@ The goal of this portfolio is to show how I use AI to solve practical problems, 
 
 ```text
 .
-├── README.md
-└── LazyLinks/
+|-- README.md
+|-- LazyLinks/
 ```
-
