@@ -23,7 +23,7 @@ def change_pincode(driver, pincode):
     This is crucial for seeing regional pricing and Buybox winners.
     """
     if not pincode:
-        print(" [!] No pincode provided. Skipping location change.")
+        print("No pincode provided. Skipping location change.")
         return
 
     driver.get("https://www.amazon.in/")
@@ -54,41 +54,49 @@ def change_pincode(driver, pincode):
             pass
 
         time.sleep(3)
-        print(f" [+] Pincode successfully set to: {pincode}")
+        print(f"Pincode successfully set to: {pincode}")
 
     except Exception as e:
-        print(f" [PINCODE ERROR] Couldn't change pincode to {pincode}: {e}")
+        print(f"Error changing pincode to {pincode}: {e}")
 
 # -----------------------------
 # MAIN SCRAPER LOGIC
 # -----------------------------
 def run_scraper():
     if not PRODUCT_ASINS:
-        print(" [!] ASIN list is empty. Please add ASINs to the PRODUCT_ASINS list.")
+        print("ASIN list is empty. Please add ASINs to the PRODUCT_ASINS list.")
         return
 
     chrome_options = Options()
-    # chrome_options.add_argument('--headless') # Uncomment to run without browser window
+    
+    # Standard stable configuration
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
+
+    # TROUBLESHOOTING: If you encounter hardware acceleration issues or crashes, 
+    # you can try adding these flags:
+    # chrome_options.add_argument('--enable-unsafe-webgpu')
+    # chrome_options.add_argument('--enable-unsafe-swiftshader')
 
     today_date = date.today().strftime('%Y-%m-%d')
     excel = openpyxl.Workbook()
     sheet = excel.active
     sheet.title = f"PriceReport_{today_date}"
-    sheet.append(['ASIN', 'Price', 'Buybox_Winner', 'Deal_Tags'])
+    
+    # Output Columns: ASIN, Price, Buybox Winner, Deal Tags
+    sheet.append(['ASIN', 'Price', 'Buybox Winner', 'Deal Tags'])
 
     driver = webdriver.Chrome(options=chrome_options)
 
     try:
-        # Set regional context
+        # Set regional context (Bangalore, Delhi, etc.)
         change_pincode(driver, TARGET_PINCODE)
 
         base_url = "https://www.amazon.in/dp/"
 
         for asin in PRODUCT_ASINS:
-            print(f" [*] Scraping ASIN: {asin}")
+            print(f"Scraping ASIN: {asin}")
             driver.get(f"{base_url}{asin}")
             time.sleep(3)
 
@@ -117,15 +125,15 @@ def run_scraper():
 
                     sheet.append([asin, price, buybox, sticker_tag])
                 except Exception as e:
-                    print(f" [!] Error retrieving data for {asin}: {e}")
+                    print(f"Error retrieving data for {asin}: {e}")
                     sheet.append([asin, "Error", "Error", "Error"])
 
     except Exception as e:
-        print(f" [CRITICAL ERROR] {e}")
+        print(f"Critical Error: {e}")
     finally:
         output_file = f'Amazon_Regional_Report_{today_date}.xlsx'
         excel.save(output_file)
-        print(f" [+] Report saved to {output_file}")
+        print(f"Report saved successfully to: {output_file}")
         driver.quit()
 
 if __name__ == "__main__":
